@@ -3,10 +3,6 @@ unsigned count,toggle;
 
 void setup() {
   pinMode(PIN_LED,OUTPUT);
-  Serial.begin(115200);
-  while (!Serial){
-    ;}
-   Serial.println("Hello World!");
    count = toggle = 0;
    digitalWrite(PIN_LED,toggle); // 처음 LED ON
    delay(1000);
@@ -33,3 +29,4 @@ void loop() {
 
   
 }
+
